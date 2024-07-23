@@ -57,6 +57,7 @@ def get_policies(name=None):
 #  @param   path Path to the policy database.
 #  @return  Policies for the specified object. 
 #           Returned as a dictionary: { “keys”: [...], “values”: [...]}.
+#           My super importent note
 def get_non_empty_keys_policies(path):
     policies = get_all_policies(path)
     for k, v in zip(policies['keys'][:], policies['values'][:]):
